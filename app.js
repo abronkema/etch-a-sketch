@@ -10,6 +10,9 @@ function createGrid(number) {
       const newBlock = document.createElement("div");
       let newDiv = newRow.appendChild(newBlock);
       newDiv.className = "block";
+      newDiv.addEventListener("mouseover", function(el) {
+        el.target.style.backgroundColor = "white";
+      });
     }
   }
 }

@@ -26,10 +26,6 @@ header {
   flex-shrink: 1;
 }
 
-.block:hover {
-  background: black;
-}
-
 .row {
   background: aqua;
   display: flex;
