@@ -16,7 +16,6 @@ header {
   height: 10vh;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid black;
 }
 
 .container {
@@ -34,7 +33,7 @@ header {
 }
 
 .row {
-  background: aqua;
+  background: black;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
