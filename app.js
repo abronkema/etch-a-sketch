@@ -1,4 +1,5 @@
 const mainContainer = document.querySelector(".container");
+const resetButton = document.getElementById("reset");
 
 function createGrid(number) {
   // gridSize should be the number of rows and number of columns
@@ -15,3 +16,7 @@ function createGrid(number) {
     }
   }
 }
+
+resetButton.addEventListener("click", function(el) {
+  console.log(el.target);
+});
