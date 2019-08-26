@@ -2,9 +2,6 @@ const mainContainer = document.querySelector(".container");
 const resetButton = document.getElementById("reset");
 
 function createGrid(number) {
-  // gridSize should be the number of rows and number of columns
-  // for each number, create a row
-  // for each row, create a block
   for (row = 1; row <= number; row++) {
     const newRow = document.createElement("div");
     let newDiv = mainContainer.appendChild(newRow);
@@ -17,6 +14,14 @@ function createGrid(number) {
   }
 }
 
+function clearGrid() {
+  while (mainContainer.firstChild) {
+    mainContainer.removeChild(mainContainer.firstChild);
+  }
+}
+
 resetButton.addEventListener("click", function(el) {
-  console.log(el.target);
+  el = prompt("Enter grid size");
+  clearGrid();
+  createGrid(parseInt(el));
 });
