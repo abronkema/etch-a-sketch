@@ -1,12 +1,40 @@
 html {
   font-family: "Permanent Marker", cursive;
 }
+
+h1,
+body {
+  margin: 0 auto;
+}
+
+header {
+  height: 10vh;
+  margin: 0 auto;
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .block {
-  border: 1px solid black;
-  margin: 5px;
+  /* border: 1px solid black; */
+  /* height: 1rem; */
+  flex-grow: 1;
+}
+
+.block:hover {
+  background: black;
+}
+
+.row {
+  background: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
 }
