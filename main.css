@@ -1,5 +1,10 @@
-html {
+html,
+button {
   font-family: "Permanent Marker", cursive;
+}
+
+button {
+  font-size: 1em;
 }
 
 h1,
@@ -11,6 +16,7 @@ header {
   height: 10vh;
   margin: 0 auto;
   text-align: center;
+  border: 1px solid black;
 }
 
 .container {
